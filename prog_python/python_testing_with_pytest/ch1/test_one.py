@@ -1,6 +1,5 @@
 #Chapter 1
 # Getting started with pytest
-import pytest
 
 
 def test_passing():
