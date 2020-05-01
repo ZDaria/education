@@ -1,5 +1,5 @@
 
-#Valid values
+# Valid values
 valid_employee_tab = {
         "Anna": {
             "code": "EMP",
@@ -24,11 +24,20 @@ valid_department_tab = {
     "B": {
         "sales": 20000}}
 
-#Employee_tab is empty
+# Employee_tab is empty
 empty_employee_tab = {}
 
-valid_department_tab_1 = {
-    "A": {
-        "sales": 10000},
-    "B": {
-        "sales": 20000}}
+# Department tab is empty
+
+empty_department_tab = {}
+
+# We
+empty_leading_employee_tab = {
+    "Anna": {
+        "code": "EMP",
+        "dept": "A",
+        "salary": 10000},
+    "Alex": {
+        "code": "EMP",
+        "dept": "A",
+        "salary": 11000}}
