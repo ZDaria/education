@@ -31,7 +31,6 @@ empty_employee_tab = {}
 
 empty_department_tab = {}
 
-# We
 empty_leading_employee_tab = {
     "Anna": {
         "code": "EMP",
@@ -41,3 +40,15 @@ empty_leading_employee_tab = {
         "code": "EMP",
         "dept": "A",
         "salary": 11000}}
+
+one_record_employee_tab = {
+    "Anna": {
+        "code": "EMP",
+        "dept": "A",
+        "salary": 10000}}
+
+one_record_department_tab = {
+    "A": {
+        "sales": 10000}}
+
+
