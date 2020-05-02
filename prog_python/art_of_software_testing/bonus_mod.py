@@ -7,7 +7,8 @@ def bonus(employee_tab, department_tab):
     :param department_tab: contains departments with they results
     :return: error code and updated employee tab with
     """
-    max_sales = ('A', {'sales': 0})
+    max_sales = 0
+    max_sales_departments = []
     salary_large = 15000
     # bonus for all employee
     bonus_emp = 200
@@ -22,11 +23,14 @@ def bonus(employee_tab, department_tab):
     else:
         # get best sales department
         for department in department_tab.items():
-            if department[1]["sales"] >= max_sales[1]["sales"]:
-                max_sales = department
+            if department[1]["sales"] > max_sales:
+                max_sales = department[1]["sales"]
+                max_sales_departments = [department[0]]
+            elif department[1]["sales"] == max_sales:
+                max_sales_departments.append(department[0])
         # get employees referring to best sales department
         for employee in employee_tab.items():
-            if employee[1]["dept"] == max_sales[0]:
+            if employee[1]["dept"] in max_sales_departments:
                 error_code = 0
                 """
                 Payment bonus will depends from code value.
