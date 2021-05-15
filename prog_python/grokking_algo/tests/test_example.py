@@ -1,5 +1,4 @@
 from education.prog_python.grokking_algo.ch1.example import binary_search
-import pytest
 
 
 def test_list_contains_var():
