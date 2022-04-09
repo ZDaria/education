@@ -19,6 +19,7 @@ TestClass.static_method()
 
 # example 2
 
+
 class Book:
     TYPES = ("hardcover", "paperback")
 
@@ -28,7 +29,7 @@ class Book:
         self.weight = weight
 
     def __repr__(self):
-        return f"<Book {self.name}, {self.book_type}, {self. weight}>g."
+        return f"<Book {self.name}, {self.book_type}, {self. weight} g.>"
 
     @classmethod
     def hardcover(cls, name, page_weight):
