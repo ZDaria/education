@@ -1,4 +1,4 @@
-from prog_python.experiments.tests.helpers.diff_file_load import \
+from prog_python.tests.helpers.diff_file_load import \
     get_csv_file_rows
 
 diff_file = get_csv_file_rows()

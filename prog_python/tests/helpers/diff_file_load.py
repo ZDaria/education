@@ -1,5 +1,5 @@
 import csv
-from prog_python.experiments.tests.dump_diff import DumpDiff
+from prog_python.tests.dump_diff import DumpDiff
 
 
 def get_csv_file_rows():

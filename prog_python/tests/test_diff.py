@@ -1,5 +1,5 @@
 import pytest
-from prog_python.experiments.tests.libs.diff_validations import \
+from prog_python.tests.libs.diff_validations import \
     compare_old_new_tenor
 
 
