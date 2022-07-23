@@ -37,12 +37,14 @@ def bonus(employee_tab, department_tab):
                 MGR - employee role is manager
                 EMP - ordinary role for employee
                 """
-                if employee[1]["code"] == "MGR" or employee[1]["salary"] >= salary_large:
+                if employee[1]["code"] == "MGR" or employee[1]["salary"] >= \
+                        salary_large:
                     employee[1]["salary"] += bonus_mgr
                 else:
                     employee[1]["salary"] += bonus_emp
         """
-        If there isn't employees referring to leading department module should return error code 1.
+        If there isn't employees referring to leading department module should 
+        return error code 1.
         In any other case error code will be 0 
         """
         if error_code == 4:
